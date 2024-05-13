@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main (void){
+  int a;
+
+  printf("int aを入力 : ");
+  scanf("%d", &a);
+
+  printf("入力された数字は%dです。", a);
+
+  return 0;
+}
