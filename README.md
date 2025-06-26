@@ -101,3 +101,24 @@ GIT HUBでできることのテストに使用します。
        - 他のブランチの変更点をすべて元のブランチに反映する。
        - 「git merge」がコミット当時の時系列にしただって変更履歴が記録される
        - 「git rebase」は新たに追記する形で変更履歴が記録される
+
+## コミットメッセージフォーマット
+[コミットメッセージ規約](https://gist.github.com/minop1205/5fc4f6ef0ec89fb1738833ba25ae00a0)
+> <type>[optional scope]: <subject>
+> [oprional body](基本空行)
+> [optional footer(s)](breaking changesについての情報、コミットがクローズしたGitHubのIssueを参照する場所。BreakingChangesは`BREAKING CHANGES`で始まる)
+
+ここではtypeの種類と概要のみ記述
+|name|description|
+|---|---|
+|build|ビルド|
+|ci|CI|
+|chore|雑事(カテゴライズする必要のないようなもの)|
+|docs|ドキュメント|
+|feat|新機能|
+|fix|バグフィックス|
+|perf|パフォーマンス|
+|refactor|リファクタリング|
+|revert|コミット取り消し(`git revert`)|
+|style|コードスタイル修正|
+|test|テスト|
