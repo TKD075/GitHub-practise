@@ -104,11 +104,14 @@ GIT HUBでできることのテストに使用します。
 
 ## コミットメッセージフォーマット
 [コミットメッセージ規約](https://gist.github.com/minop1205/5fc4f6ef0ec89fb1738833ba25ae00a0)
-> <type>[optional scope]: <subject>
-> [oprional body](基本空行)
-> [optional footer(s)](breaking changesについての情報、コミットがクローズしたGitHubのIssueを参照する場所。BreakingChangesは`BREAKING CHANGES`で始まる)
-
-ここではtypeの種類と概要のみ記述
+```
+<type>[optional scope]: <subject>
+[oprional body](基本空行)
+[optional footer(s)]
+```
+footer: (breaking changesについての情報、コミットがクローズしたGitHubのIssueを参照する場所。BreakingChangesは`BREAKING CHANGES`で始まる)<br>
+<br>
+ここではtypeの種類と概要のみ記述する
 |name|description|
 |---|---|
 |build|ビルド|
